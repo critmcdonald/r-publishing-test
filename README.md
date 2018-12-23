@@ -31,3 +31,5 @@ I tried in in `02_ezknit` but it errors and creates only a partial `.md` file an
 ## use docs for RMarkdown files
 
 My last attempt is to store my RMarkdown files inside the `docs` folder. This works, but I would rather have the `.Rmd` files in a folder of their own, and only have the published `.html` or `.pdf` files inside of `docs`.
+
+Theoretically, my example file [would be published here](https://critmcdonald.github.io/r-publishing-test/03_indocs.html).
