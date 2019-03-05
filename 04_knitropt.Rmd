@@ -13,7 +13,7 @@ Found as the [second answer here](https://stackoverflow.com/questions/26174565/r
 
 ## Result
 
-This has promise if it will understand image paths and the like.
+This seems to work. It understands images paths and bears further study.
 
 It should publish here [https://critmcdonald.github.io/r-publishing-test/04_knitropt.html]
 

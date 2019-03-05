@@ -1,0 +1,44 @@
+---
+title: "05 News Nerdery help"
+output: html_notebook
+---
+
+Two suggestions from News Nerdery by `@abtran` and `@sharon.machlis`.
+
+From Sharon
+
+```r
+library(magrittr) # for the pipe, unless you already have dplyr loaded
+hw_folder_of_rmd_files <- "rmd_folder"
+
+glue::glue("{hw_folder_of_rmd_files}/{list.files(hw_folder_of_rmd_files)}") %>%
+purrr::walk(rmarkdown::render, output_dir = "docs", output_format = "html_document")
+```
+
+From Andrew
+
+```r
+hw_folder_of_rmd_files <- “rmd_folder”
+
+list_of_files <- list.files(hw_folder_of_rmd_files)
+
+for (i in 1:length(list_of_files)) {
+
+ file_name <- paste0(hw_folder_of_rmd_files, “/”, list_of_files[i])
+ rmarkdown::render(file_name, output_dir=“docs”, output_format=“html_document”)
+
+}
+```
+
+## image path
+
+![snowman](images/snowman.png){width=200px}
+
+
+## code plot
+
+
+```{r}
+plot(cars)
+```
+

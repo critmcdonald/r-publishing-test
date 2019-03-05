@@ -37,9 +37,12 @@ My example file [did publish here](https://critmcdonald.github.io/r-publishing-t
 
 ## Attempt 04 - Better knitr metadata
 
-Another attempt [should publish here](https://critmcdonald.github.io/r-publishing-test/04_knitropt.html).
+This option in [04_knitropt.Rmd](04_knitropt.Rmd) seems to work. You can [see the result here](https://critmcdonald.github.io/r-publishing-test/04_knitropt.html).
 
 
+## Attempt 5 - Some News Nerdery suggestions
+
+Saving [those notes here](05_nnsuggests.Rmd).
 
 
 
