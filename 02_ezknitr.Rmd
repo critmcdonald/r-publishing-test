@@ -12,18 +12,30 @@ ezknit(file = "02_ezknitr.Rmd", out_dir = "docs", fig_dir = "myfigs")
 
 ## trying ezknitr
 
-This tries ezkniter, but there are errors.
+This tries ezknitr, but there are errors.
 
-```{r cars}
-summary(cars)
+RESULT: A `.md` file is saved in the `docs` directory with only the metadata and the following error occurs:
+
+```text
+Error in Encoding(x) : a character vector argument expected
+
+11. Encoding(x)
+10. native_encode(options$cache.path)
+9. fix_options(params)
+8. call_block(x)
+7. process_group.block(group)
+6. process_group(group)
+5. withCallingHandlers(if (tangle) process_tangle(group) else process_group(group), error = function(e) { setwd(wd) cat(res, sep = "\n", file = output %n% "") ...
+4. process_file(text, output)
+3. knitr::knit(file_rmd, file_md, quiet = !verbose, envir = ezknitr_env)
+2. ezknitr_helper(type = "ezknit", file = file, wd = wd, out_dir = out_dir, fig_dir = fig_dir, out_suffix = out_suffix, params = params, verbose = verbose, chunk_opts = chunk_opts, keep_rmd = TRUE, keep_md = keep_md, keep_html = keep_html)
+1. ezknit(file = "02_ezknitr.Rmd", out_dir = "docs", fig_dir = "myfigs")
+
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+4 * 5
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

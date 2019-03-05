@@ -4,16 +4,15 @@ author: "Christian McDonald"
 date: "12/18/2018"
 output:
   html_document:
-    output_dir: docs
+    output_dir: "docs"
     toc: true
 ---
 
-```{r setup}
-```
-
 ## Trying to set output_dir
 
-this tries to set an `output_dir` but it doesn't publish files in that directory.
+This tries to set an `output_dir` to "docs". (I've tried `docs` both with and w/out quotes.)
+
+RESULT: It still saves it to the same folder as the `.Rmd` file.
 
 
 ```{r}
