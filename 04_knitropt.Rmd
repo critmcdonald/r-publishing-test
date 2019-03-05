@@ -15,10 +15,15 @@ Found as the [second answer here](https://stackoverflow.com/questions/26174565/r
 
 This seems to work. It understands images paths and bears further study.
 
-It should publish here [https://critmcdonald.github.io/r-publishing-test/04_knitropt.html]
+It should [publish here](https://critmcdonald.github.io/r-publishing-test/04_knitropt.html)
 
-![snowman](images/snowman.png)
+## Image
 
+Which is actually from `/images` in the project root, so this is huge.
+
+![snowman](images/snowman.png){width=200px}
+
+## plot
 
 ```{r}
 plot(cars)
